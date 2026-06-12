@@ -1,0 +1,30 @@
+{
+  "name": "electronapp",
+  "version": "1.0.0",
+  "description": "Meu primeiro App Electron",
+  "main": "electron/main.js",
+  "scripts": {
+    "test": "test",
+    "electron": "electron .",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [
+    "electron",
+    "app",
+    "tests"
+  ],
+  "author": "kervijhonata",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "electron": "^42.4.0",
+    "vite": "^8.0.16"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}

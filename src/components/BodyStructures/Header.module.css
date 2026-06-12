@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+.globalHeader {
+    width: 100%;
+    background: linear-gradient(30deg, rgb(83, 160, 41), rgb(50, 140, 34), rgb(21, 135, 53));
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        flex: row nowrap;
+        img{ width: 30px; aspect-ratio: 1/1; }
+        font-family: "Erica One", sans-serif;
+    }
+
+    .menuAction {
+
+        display: flex;
+        flex: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .login {
+            color: white;
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 12pt;
+        }
+
+        button {
+            width: 32pt;
+            aspect-ratio: 1/1;
+            font-weight: bold;
+            font-size: 14pt;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+    
+            .bar {
+                width: 80%;
+                height: 3px;
+                background-color: black;
+                position: relative;
+    
+                &::after, &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    background-color: black;
+                    transform: translatex(-500px);
+                }
+                &::after {
+                    transform: translate(-11px, -8px);
+                }
+                &::before {
+                    transform: translate(-11px, 8px);
+                }
+            }
+        }
+    }
+}
