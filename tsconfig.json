@@ -4,5 +4,5 @@
     "moduleResolution": "node",
     "ignoreDeprecations": "6.0"
   },
-  "include": ["**/*"] // Garante que tudo dentro de src seja checado em segundo plano
+  "include": ["**/*", "./tsconfig.node.json"] // Garante que tudo dentro de src seja checado em segundo plano
 }
