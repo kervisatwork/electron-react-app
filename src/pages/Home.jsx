@@ -3,6 +3,8 @@ import Main from "../components/BodyStructures/Main"
 
 import "./Home.css"
 
+import { Link } from "react-router";
+
 function HomePage() {
     return (
         <div>
@@ -49,7 +51,7 @@ function HomePage() {
                         <div className="cardHeading">
                             <div>
                                 <img src="http://i.pravatar.cc/80" alt="" className="userImage"/>
-                                <span className="userName">Helly R.</span>
+                                <span className="userName">Mark S.</span>
                             </div>
                             <div>
                                 <span className="userRatins">
@@ -64,6 +66,13 @@ function HomePage() {
                         <div className="cardBody">
                             <p>Minha vida tava uma delicia lá fora, agora tá tudo uma porra</p>
                         </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <Link to="/teste">teste</Link>
+                        <button>Fazer login</button>
+                        <a>Fazer login</a>
                     </div>
                 </div>
             </main>

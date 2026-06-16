@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=star");
+
 
 :root {
     --green: #8ace00;
@@ -49,9 +49,10 @@ main {
         width: 100%;
         background: rgb(23, 23, 23);
         font-size: 1.2rem;
+        text-align: justify;
 
-        &:not(:last-of-type) {
-            margin-bottom: 20px1;
+        &:not(:last-child) {
+            margin-bottom: 20px;
         }
     }
 
