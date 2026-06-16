@@ -1,11 +1,9 @@
-class ModelTest extends Component {
-    render() {
-        return (
-            <div>
-                Olá, Kervi!
-            </div>
-        )
-    }
+function ModelTest() {
+    return (
+        <div>
+            Renderizando essa buceta do ModelTest
+        </div>
+    )
 }
 
 
