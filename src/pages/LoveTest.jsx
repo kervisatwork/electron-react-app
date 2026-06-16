@@ -2,7 +2,9 @@ function LoveTest(props) {
 
     return (
         <div>
-            Betinho, te amo
+            <p>
+                A temperatura deste <a href="/#img1">ambiente</a> está aumentando devido a falha no ar condicionado.
+            </p>
         </div>
     )
 }

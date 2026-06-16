@@ -3,7 +3,7 @@
 
 ## Inicialização
 
-1. Para abrir o ambiente de desenvolvimento, insira ```node run dev```;
+1. Para abrir o ambiente de desenvolvimento, insira ```npm run dev```;
 
 ## Informações norteadoras do projeto
 

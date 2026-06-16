@@ -14,6 +14,12 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/amor" element={<LoveTest />} />
+                {/* <Route path="/home" element={<HomePage />} />
+                <Route path="/program" element={<HomePage />} />
+                <Route path="/dashboard" element={<HomePage />} />
+                <Route path="/signin" element={<HomePage />} />
+                <Route path="/logout" element={<HomePage />} />
+                <Route path="/privacy" element={<LoveTest />} /> */}
             </Routes>
         </>
     );
