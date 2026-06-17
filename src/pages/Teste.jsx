@@ -1,4 +1,7 @@
 import { Link } from "react-router"
+import { ThemeProvider } from "styled-components"
+
+import ThemeSchema from "../theme/Theme"
 
 function Teste() {
 
@@ -42,9 +45,11 @@ function BtnPillIcon({icon, title, color, destiny}) {
 
 function MaterialIcon({name}) {
     return (
-        <span class="material-symbols-outlined">
-            {name}
-        </span>
+        <ThemeProvider theme={ThemeSchema}>
+            <span class="material-symbols-outlined">
+                {name}
+            </span>
+        </ThemeProvider>
     )
 }
 

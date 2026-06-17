@@ -1,5 +1,10 @@
+/* Global CSS: Applied over all child in App layer */
+
+/* Importations */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
+/* CSS Reset */
 * {
     margin: 0;
+    padding: 0;
 }
