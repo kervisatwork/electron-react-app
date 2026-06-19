@@ -1,24 +1,38 @@
 import { Link } from "react-router"
-import { ThemeProvider } from "styled-components"
 
-import ThemeSchema from "../theme/Theme"
+import Theme from "../theme/Theme"
 
-function Teste() {
+function TestPage() {
 
     let style = {
         display: "flex",
-        flexFlow: "row wrap",
-        gap: "4pt"
+        flex: "1",
+        gap: "4pt",
+        backgroundColor: Theme.colors.background.primary,
+        color: Theme.font.color.primary
     }
 
     return (
-        <div style={style}>
-            <BtnPillIcon icon={<MaterialIcon name="star" />} title="Click Me" color="#00ff00" destiny="../" />
-            <BtnPillIcon title="Teste" color="#ffcc00"/>
-            <BtnPillIcon title="STOP!" color="#ff0000"/>
+        <div>
+            <header>
+                Header do projeto
+            </header>
+            <main>
+
+            </main>
+            <footer>
+                Footer do projeto
+            </footer>
         </div>
     )
 }
+
+
+
+
+
+
+
 
 function BtnPillIcon({icon, title, color, destiny}) {
 
@@ -45,12 +59,10 @@ function BtnPillIcon({icon, title, color, destiny}) {
 
 function MaterialIcon({name}) {
     return (
-        <ThemeProvider theme={ThemeSchema}>
-            <span class="material-symbols-outlined">
-                {name}
-            </span>
-        </ThemeProvider>
+        <span class="material-symbols-outlined">
+            {name}
+        </span>
     )
 }
 
-export default Teste;
+export default TestPage;

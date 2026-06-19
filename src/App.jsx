@@ -1,30 +1,39 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
 import { Component } from 'react';
-import { ThemeProvider } from 'styled-components';
+import { styled } from 'styled-components'
 
 // Paginas
 import HomePage from "./pages/Home"
-import Teste from "./pages/Teste"
+import TestPage from "./pages/Teste"
 
 // Css
 import "./App.css"
-import ThemeSchema from "./theme/Theme"
+import Theme from "./theme/Theme"
 
 
 class App extends Component {
 
     render() {
         return (
-            <>
-                <ThemeProvider theme={ThemeSchema}>
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/teste" element={<Teste />} />
-                    </Routes>
-                </ThemeProvider>
-            </>
+            <Container>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/teste" element={<TestPage />} />
+                </Routes>
+            </Container>
         )
     }
 }
+
+const Container = styled.div`
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100vwh;
+    min-height: 100vh;
+    background-color: ${Theme.background.color.primary};
+    box-sizing: border-box;
+    overflow: none;
+`
+
 
 export default App;

@@ -11,25 +11,21 @@ html {
     background: var(--backgroundColor);
     color: var(--primaryAccentColor);
     font-size: 1.2em;
-} */
+}
 
 .header {
     width: 100%;
     margin-bottom: 20px;
 
     h2, .headerTitle {
-        /* transform: translateY(-20px); */
+        transform: translateY(-20px;
         color: white;
         text-align: center;
         font-size: 32pt;
-        /* background-color: var(--green); */
+        background-color: var(--green);
     }
 
-    img {
-        width: 100%;
-        height: 300px;
-    }
-}
+} 
 
 main {
 
@@ -112,3 +108,5 @@ footer {
         }
     }
 }
+
+*/

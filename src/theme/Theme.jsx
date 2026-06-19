@@ -3,6 +3,7 @@ const colors = {
     charcoalBlack: "#21272d",
     jetBlack: "#171717",
     pitchBlack: "#000000",
+    lightPaleGreen: "#f8fdf0",
 }
 
 const breakpoints = {
@@ -19,23 +20,30 @@ const media = {
     extended: `@media screen and (min-width: ${breakpoints.extended})`,
 }
 
-const ThemeSchema = {
+const darkTheme = {
     breakpoints,
     media,
     font: {
         family: {
-            primary: "sans-serif",
+            primary: "monospace",
             secondary: "serif"
         },
         sized: {
-            title: "clamp(24pt, 32pt, 6vh)",
+            title: "clamp(32px, 2.8em, 10vw)",
             subtitle: "",
             content: "",
             label: "",
             description: "",
+            text: "",
+        },
+        size: {
+            small: "clamp(12px, 12pt, 4vw)",
+            medium: "clamp(16px, 16pt, 8vw)",
+            large: "clamp(24px, 22pt, 12vw)",
         },
         color: {
-            primary: "#ffffff",
+            accent: colors.green,
+            primary: colors.lightPaleGreen,
         }
     },
     colors:{
@@ -44,6 +52,19 @@ const ThemeSchema = {
             secondary: colors.jetBlack,
         }
     },
+    background: {
+        color: {
+            primary: colors.charcoalBlack,
+        }
+    },
+    spacing: {
+        padding: {
+            small: "6vw",
+            medium: "10vw"
+        }
+    }
 }
 
-export default ThemeSchema;
+const Theme = darkTheme;
+
+export default Theme;
